@@ -26,12 +26,12 @@ project-directory/
 
 ### 0. **Create a QuickSight Account**
 - Visit [Amazon QuickSight](https://quicksight.aws.amazon.com/).
-- Sign up for an account (a free trial is available for first-time users).
+- Sign up for an account (a free trial is available).
 - Follow the setup instructions to get started with QuickSight.
 
 ### 1. **Set Up the Dataset**
 - Upload the `netflix_titles.csv` file to an **Amazon S3 bucket**.
-- Create a `manifest.json` file to specify the file location and format, including:
+- Create a `manifest.json` file to specify the file location and format. Ensure you update the bucket name in the file to match your S3 bucket. Include:
   - File path in S3 (`s3://your-bucket-name/netflix_titles.csv`)
   - File format as `CSV`, with delimiter `,` and text qualifier `"`.
 
