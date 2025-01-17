@@ -24,6 +24,11 @@ project-directory/
 
 ## Steps to Recreate the Project
 
+### 0. **Create a QuickSight Account**
+- Visit [Amazon QuickSight](https://quicksight.aws.amazon.com/).
+- Sign up for an account (a free trial is available for first-time users).
+- Follow the setup instructions to get started with QuickSight.
+
 ### 1. **Set Up the Dataset**
 - Upload the `netflix_titles.csv` file to an **Amazon S3 bucket**.
 - Create a `manifest.json` file to specify the file location and format, including:
@@ -36,6 +41,8 @@ project-directory/
 - Upload the `manifest.json` file to connect the S3 bucket to QuickSight.
 
 ### 3. **Create Visualizations**
+
+Before starting, ensure you are logged into your **Amazon QuickSight account**. All visualizations will be created within your QuickSight workspace. Follow these steps to build meaningful insights from your dataset:
 - **Visualization 1: Breakdown by Release Year**  
   Drag the `release_year` field into the Y-Axis and configure a donut chart to show the breakdown of content by year.
 
